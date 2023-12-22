@@ -10,7 +10,7 @@ const Word = ({value}) => {
     const words = value.split(" ");
   return (
     <p ref={element} 
-    className='lg:w-1/2 flex flex-wrap  px-4 font-special text-xl  justify-center'>
+    className='z-10 flex flex-wrap  px-4 font-tertiary text- p-6 rounded uppercase border-t-2 lg:border-t-0 lg:border-l-2 border-indigo-500 bg-gradient-to-b lg:bg-gradient-to-r from-[#0c0b2b] to-transparent bg-opacity-20 justify-left'>
         {
             words.map((word, i)=>{
                 const start = i/words.length;

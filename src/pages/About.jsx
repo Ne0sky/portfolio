@@ -12,19 +12,22 @@ const About = () => {
     return (
         <div className='w-full text-white p-4 flex flex-col justify-center items-center'>
 
-            <h2 className='font-main text-5xl text-lime-500 text-center relative'>About Me.</h2>
-            <div className='flex flex-col py-16 items-center w-full justify-center'>
+            <h2 className='font-tertiary font-bold text-5xl text-lime-500 text-center relative'>About Me.</h2>
+            <div className='flex flex-col lg:flex-row py-16 items-center w-full justify-center'>
             <div className='relative'>
             <Lottie className='w-[450px] relative z-20' animationData={lottie} loop={true} />
-            <div className='w-[300px] h-[300px] absolute top-0 left-20 rounded-full z-2 blur-2xl bg-indigo-800 bg-opacity-20'></div>
+            <div className='w-[300px] h-[300px] absolute top-0 left-20 rounded-full z-2 blur-2xl bg-indigo-600 bg-opacity-20'></div>
             </div>
-            
-            {/* <AboutMeParagraph  value={paragraph}/> */}
+         
+            <div className='lg:w-1/2 relative'>
+            <div className='w-[400px] h-[300px] absolute -top-20 -left-20  rounded-full z-2 blur-2xl bg-rose-900 bg-opacity-10'></div>
             <Word value={paragraph}/>
             </div>
            
+            </div>
+           
             
-            <h2 className='font-main text-5xl text-lime-500'>Skills.</h2>
+            <h2 className='font-tertiary font-bold text-5xl text-lime-500'>Skills.</h2>
             <div className='flex pt-8 flex-wrap gap-2 w-[85%] lg:w-1/2 items-center justify-center'>
                 {
                     skills.map((skill, index) => {
