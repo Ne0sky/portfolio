@@ -17,8 +17,8 @@ const Home = () => {
         <div className='min-h-full relative w-1/3  flex flex-col justify-center items-center'>
           <div className='flex flex-col items-center justify-center'>
             <div className='absolute top-4 flex items-center'>
-              <div className='w-[180px] h-[250px] animate-spin-slow rounded-full z-2 blur-2xl bg-gradient-to-br from-[#1f571b] to-[#0d2f0e]'></div>
-              <div className='w-[180px] h-[250px] animate-spin-slow-2 rounded-full z-2 blur-2xl bg-gradient-to-br from-[#1c377a] to-[#0a1b3d]'></div>
+              <div className='w-[180px] h-[250px] animate-spin-slow rounded-full z-2 blur-2xl bg-gradient-to-br from-lime-800 to-transparent'></div>
+              <div className='w-[180px] h-[250px] animate-spin-slow-2 rounded-full z-2 blur-2xl bg-gradient-to-br from-indigo-800 to-transparent'></div>
             </div> 
             <h1 className='font-main text-7xl z-10 relative'>Akash Dey.</h1>
             <p className='desc font-tertiary font-semibold py-2 z-8 text-4xl rounded text-center bg-white backdrop-filter backdrop-blur-sm bg-opacity-10 mb-8 px-4 border border-lime-500'>Developer & Designer</p>
