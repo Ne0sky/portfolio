@@ -8,7 +8,7 @@ const Home = () => {
     <div className='w-screen h-full text-white overflow-x-hidden p-8 md:p-16 lg:p-16'>
       <div className='flex items-end'>
         <h1 className='text-3xl text-lime-500 font-main'>Ne0sky</h1>
-        <div className='w-80 h-0.5 bg-gradient-to-r from-lime-500 to-black'></div>
+        <div className='w-80 h-0.5 bg-gradient-to-r from-lime-500 to-transparent'></div>
       </div>
       <div className='flex h-full items-center w-full  justify-around'>
         <div className='w-1/3 md:flex hidden'>
@@ -27,10 +27,10 @@ const Home = () => {
               <p className='flex items-center gap-4'>Graphic Design <VscLinkExternal/></p>
               <p className='flex items-center gap-4'>Creative Arts <VscLinkExternal/></p>
             </div>
-            <div className='w-80 mt-8 h-0.5 bg-gradient-to-r from-black via-lime-500 to-black'></div>
+            <div className='w-80 mt-8 h-0.5 bg-gradient-to-r from-transparent via-lime-500 to-transparent'></div>
           </div>
           <div className=' text-center relative'>
-            <p className='tag my-8 text-sm font-tertiary z-10 uppercase'>Hey there!👋 I'm a <b>Computer Science undergrad</b> with a deep-rooted passion for software engineering and design. I create engaging and beautiful tech solutions using tools like <span className='text-lime-500 font-bold text-lg px-2'>React.js,</span><span className='text-lime-500 font-bold text-lg pr-2'>Express.js,</span><span className='text-lime-500 font-bold text-lg pr-2'>Node.js,</span><span className='text-lime-500 font-bold text-lg pr-2'>Mongo DB,</span> and a host of other tech goodies.</p>
+            <p className='tag my-8 text- font-tertiary z-10 uppercase'>Hey there!👋 I'm a <b>Computer Science undergrad</b> with a deep-rooted passion for software engineering and design. I create engaging and beautiful tech solutions using tools like <span className='text-lime-500 font-bold text-lg px-2'>React.js,</span><span className='text-lime-500 font-bold text-lg pr-2'>Express.js,</span><span className='text-lime-500 font-bold text-lg pr-2'>Node.js,</span><span className='text-lime-500 font-bold text-lg pr-2'>Mongo DB,</span> and a host of other tech goodies.</p>
             <div className='flex w-full gap-4 items-center justify-center'>
             <button className='z-10 font-tertiary  text-xl w-auto text-center border border-indigo-500 rounded px-4 py-2 bg-opacity-20 bg-indigo-800 hover:bg-opacity-50'>Download Resume</button>
             <button className='z-10 font-tertiary text-xl w-auto text-center border border-indigo-500 rounded px-4 py-2 bg-opacity-20 bg-indigo-800 hover:bg-opacity-50'>See my projects</button>

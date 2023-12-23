@@ -2,10 +2,10 @@ import React from 'react'
 import skills from '../data/skill'
 import Lottie from "lottie-react";
 import lottie from '../data/lottie.json'
-import AboutMeParagraph from '../components/AboutMeParagraph';
+import { VscLinkExternal } from "react-icons/vsc";
 import Word from '../components/Word';
 const paragraph = `I'm a Computer Science undergrad student graduating in 2025, blending my passion for art with coding to craft beautiful, functional full-stack websites. Beyond coding, I indulge in painting, graphic design, and a love for classic art, 
- especially the Renaissance era. When I'm not creating, I unwind with movies.
+ especially the Renaissance era. When I'm not creating, I unwind with movies classic rock music, and sometimes timeless bengali classics.
 Let's blend the old and the new to create something extraordinary.`
 
 const About = () => {
@@ -23,6 +23,7 @@ const About = () => {
             <div className='w-[400px] h-[300px] absolute -top-20 -left-20  rounded-full z-2 blur-2xl bg-rose-900 bg-opacity-10'></div>
             <h2 className='text-xl font-tertiary font-bold pb-8'>User-centred tech solutions, classic rock music, renaissance art & movies</h2>
             <Word value={paragraph}/>
+            <button className='bg-lime-500 flex items-center gap-2 text-black font-tertiary font-medium p-2 my-4 rounded'>Checkout my Artworks <VscLinkExternal/></button>
             </div>
            
             </div>
