@@ -24,7 +24,6 @@ const Home = () => {
             <p className='desc font-tertiary font-semibold py-2 z-8 text-4xl rounded text-center bg-white backdrop-filter backdrop-blur-sm bg-opacity-10 mb-8 px-4 border border-lime-500'>Developer & Designer</p>
             <div className='font-tertiary text-xl uppercase z-10'>
               <p className='flex items-center gap-4'>Full Stack Development <VscLinkExternal/></p>
-              <p className='flex items-center gap-4'>UI-UX Design <VscLinkExternal/></p>
               <p className='flex items-center gap-4'>Graphic Design <VscLinkExternal/></p>
               <p className='flex items-center gap-4'>Creative Arts <VscLinkExternal/></p>
             </div>
