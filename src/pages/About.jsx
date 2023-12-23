@@ -12,26 +12,29 @@ const About = () => {
     return (
         <div className='w-full text-white p-4 flex flex-col justify-center items-center'>
 
-            <h2 className='font-tertiary font-bold text-5xl text-lime-500 text-center relative'>About Me.</h2>
+            <h2 className='font-tertiary font-bold text-6xl text-lime-500 text-center relative'>About Me.</h2>
             <div className='flex flex-col lg:flex-row py-16 items-center w-full justify-center'>
             <div className='relative'>
             <Lottie className='w-[450px] relative z-20' animationData={lottie} loop={true} />
-            <div className='w-[300px] h-[300px] absolute top-0 left-20 rounded-full z-2 blur-2xl bg-indigo-600 bg-opacity-20'></div>
+            {/* <div className='w-[300px] h-[300px] absolute top-0 left-20 rounded-full z-2 blur-2xl bg-indigo-600 bg-opacity-20'></div> */}
             </div>
          
-            <div className='lg:w-1/2 relative'>
+            <div className='lg:w-1/3 relative'>
             <div className='w-[400px] h-[300px] absolute -top-20 -left-20  rounded-full z-2 blur-2xl bg-rose-900 bg-opacity-10'></div>
+            <h2 className='text-xl font-tertiary font-bold pb-8'>User-centred tech solutions, classic rock music, renaissance art & movies</h2>
             <Word value={paragraph}/>
             </div>
            
             </div>
            
             
-            <h2 className='font-tertiary font-bold text-5xl text-lime-500'>Skills.</h2>
-            <div className='flex pt-8 flex-wrap gap-2 w-[85%] lg:w-1/2 items-center justify-center'>
+            <h2 className='font-tertiary font-bold text-xl '>Technologies I have worked with.</h2>
+            <div className='flex pt-8 flex-wrap gap-2 relative w-[85%] lg:w-1/2 items-center justify-center'>
+            <div className='w-[500px] h-[300px] absolute   rounded-full z-2 blur-2xl bg-blue-500 bg-opacity-10'></div>
+
                 {
                     skills.map((skill, index) => {
-                        return <p key={index} className='bg-indigo-800 bg-opacity-20 border border-indigo-500 rounded p-2'> {skill}</p>;
+                        return <p key={index} className='bg-[#0f103d] text-lg border border-indigo-500 rounded p-2'> {skill}</p>;
                     })
                 }
             </div>

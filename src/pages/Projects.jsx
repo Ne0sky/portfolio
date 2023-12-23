@@ -5,7 +5,7 @@ import { VscLinkExternal } from "react-icons/vsc";
 const Projects = () => {
   return (
     <div className='w-full text-white px-24 pt-16 flex flex-col justify-center items-center'>
-        <h2 className='text-5xl text-lime-500 font-main py-4'>Projects.</h2>
+        <h2 className='text-6xl font-bold text-lime-500 font-tertiary py-4'>Projects.</h2>
         
         <div className='border-b font-tertiary border-lime-600 flex items-center justify-between w-[90%] py-12  w-full'>
             <p className='text-2xl font-medium flex gap-8 items-center'>001. <VscLinkExternal className='text-lime-500'/></p>
