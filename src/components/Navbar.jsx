@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
+import { Link } from 'react-scroll';
 
 const NavBar = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -33,14 +34,14 @@ const NavBar = () => {
         translateX:'-50%',
         zIndex: 999,
       }}
-      className='fixed text-white bottom-15 left-1/2 transform -translate-x-1/2 bg-white max-w-full flex justify-center items-center w-[300px] bg-opacity-10 border border-lime-300 p-4 backdrop-filter backdrop-blur-sm rounded-xl'
+      className='fixed text-white bottom-15 left-1/2 transform -translate-x-1/2 bg-indigo-800 max-w-full flex justify-center items-center w-[95%] lg:w-[500px]  border border-indigo-600 p-4 backdrop-filter backdrop-blur-sm bg-opacity-90 rounded-xl'
     >
       {/* Your navigation content here */}
-      <ul className='flex font-tertiary items-center gap-4'>
-        <li>Home</li>
-        <li>About</li>
-        <li>Projects</li>
-        <li>Contact</li>
+      <ul className='flex font-tertiary  items-center font-semibold w-full justify-around'>
+        <li className='hover:font-bold cursor-pointer '><Link to='home' smooth={true} duration={500}>Home</Link></li>
+        <li className='hover:font-bold cursor-pointer'><Link to='about' smooth={true} duration={500}>About</Link></li>
+        <li className='hover:font-bold cursor-pointer'><Link to='projects' smooth={true} duration={500}>Projects</Link></li>
+        <li className='hover:font-bold cursor-pointer'>Contact</li>
         {/* Add more navigation items */}
       </ul>
     </motion.div>

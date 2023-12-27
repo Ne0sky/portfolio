@@ -2,12 +2,13 @@ import React from 'react';
 import { VscLinkExternal } from "react-icons/vsc";
 import Sidemenu from '../components/Sidemenu';
 import Contactbar from '../components/Contactbar';
+import { FaDownload } from "react-icons/fa6";
 
 const Home = () => {
   return (
-    <div className='w-screen h-full text-white overflow-x-hidden p-8 md:p-16 lg:p-16'>
+    <div className='w-screen h-full text-white overflow-x-hidden p-4 md:p-16 lg:p-16'>
       <div className='flex items-end'>
-        <h1 className='text-3xl text-lime-500 font-main'>Ne0sky</h1>
+        <h1 className='text-2xl lg:text-3xl text-lime-500 font-main'>Ne0sky</h1>
         <div className='w-80 h-0.5 bg-gradient-to-r from-lime-500 to-transparent'></div>
       </div>
       <div className='flex h-full items-center w-full  justify-around'>
@@ -20,20 +21,20 @@ const Home = () => {
               <div className='w-[180px] h-[250px] animate-spin-slow rounded-full z-2 blur-2xl bg-gradient-to-br from-lime-800 to-transparent'></div>
               <div className='w-[180px] h-[250px] animate-spin-slow-2 rounded-full z-2 blur-2xl bg-gradient-to-br from-indigo-800 to-transparent'></div>
             </div> 
-            <h1 className='font-main text-7xl z-10 relative'>Akash Dey.</h1>
+            <h1 className='font-main text-5xl pt-8 lg:text-7xl z-10 relative'>Akash Dey.</h1>
             <p className='desc font-tertiary font-semibold py-2 z-8 text-4xl rounded text-center bg-white backdrop-filter backdrop-blur-sm bg-opacity-10 mb-8 px-4 border border-lime-500'>Developer & Designer</p>
-            <div className='font-tertiary text-xl uppercase z-10'>
-              <p className='flex items-center gap-4'>Full Stack Development <VscLinkExternal/></p>
-              <p className='flex items-center gap-4'>Graphic Design <VscLinkExternal/></p>
-              <p className='flex items-center gap-4'>Creative Arts <VscLinkExternal/></p>
+            <div className='font-tertiary text-xl text-center uppercase z-10'>
+              <p className=''>Full Stack Development </p>
+              <p >Graphic Design</p>
+              <p >Creative Arts</p>
             </div>
             <div className='w-80 mt-8 h-0.5 bg-gradient-to-r from-transparent via-lime-500 to-transparent'></div>
           </div>
-          <div className=' text-center relative'>
-            <p className='tag my-8 text- font-tertiary z-10 uppercase'>Hey there!👋 I'm a <b>Computer Science undergrad</b> with a deep-rooted passion for software engineering and design. I create engaging and beautiful tech solutions using tools like <span className='text-lime-500 font-bold text-lg px-2'>React.js,</span><span className='text-lime-500 font-bold text-lg pr-2'>Express.js,</span><span className='text-lime-500 font-bold text-lg pr-2'>Node.js,</span><span className='text-lime-500 font-bold text-lg pr-2'>Mongo DB,</span> and a host of other tech goodies.</p>
+          <div className=' text-center px-4'>
+            <p className='tag  my-8 text- font-tertiary z-10 uppercase'>Hey there!👋 I'm a <b>Computer Science undergrad</b> with a deep-rooted passion for software engineering and design. I create engaging and beautiful tech solutions using tools like <b>REACT JS, </b> <b>Node js, </b> <b>Express js, </b> <b>Mongo db, </b>and a host of other tech goodies.</p>
             <div className='flex w-full gap-4 items-center justify-center'>
-            <button className='z-10 font-tertiary  text-xl w-auto text-center border border-indigo-500 rounded px-4 py-2 bg-opacity-20 bg-indigo-800 hover:bg-opacity-50'>Download Resume</button>
-            <button className='z-10 font-tertiary text-xl w-auto text-center border border-indigo-500 rounded px-4 py-2 bg-opacity-20 bg-indigo-800 hover:bg-opacity-50'>See my projects</button>
+            <button className='z-10 font-tertiary  text-xl w-auto text-center border border-lime-500 rounded px-4 py-2 bg-opacity-30 bg-lime-500 hover:bg-opacity-50 flex gap-2 items-center'>Resume <FaDownload/></button>
+            <button className='z-10 font-tertiary text-xl w-auto text-center border border-indigo-500 rounded px-4 py-2 bg-opacity-20 bg-indigo-800 hover:bg-opacity-50'>Projects</button>
             </div>
             
           </div>

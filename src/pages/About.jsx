@@ -12,7 +12,7 @@ const About = () => {
     return (
         <div className='w-full text-white p-4 flex flex-col justify-center items-center'>
 
-            <h2 className='font-tertiary font-bold text-6xl text-lime-500 text-center relative'>About Me.</h2>
+            <h2 className='font-tertiary font-bold text-4xl lg:text-6xl text-lime-500 text-center relative'>About Me.</h2>
             <div className='flex flex-col lg:flex-row py-16 items-center w-full justify-center'>
             <div className='relative'>
             <Lottie className='w-[450px] relative z-20' animationData={lottie} loop={true} />
@@ -22,7 +22,8 @@ const About = () => {
             <div className='lg:w-1/3 relative'>
             <div className='w-[400px] h-[300px] absolute -top-20 -left-20  rounded-full z-2 blur-2xl bg-rose-900 bg-opacity-10'></div>
             <h2 className='text-xl font-tertiary font-bold pb-8'>User-centred tech solutions, classic rock music, renaissance art & movies</h2>
-            <Word value={paragraph}/>
+            {/* <Word value={paragraph}/> */}
+            <p className='z-10 flex flex-wrap  px-4 font-tertiary text- p-6 rounded  border-t-2 lg:border-t-0 lg:border-l-2 border-indigo-500 bg-gradient-to-b lg:bg-gradient-to-r from-[#0c0b5c] to-transparent bg-opacity-20 justify-left'>{paragraph}</p>
             <button className='bg-lime-500 flex items-center gap-2 text-black font-tertiary font-medium p-2 my-4 rounded'>Checkout my Artworks <VscLinkExternal/></button>
             </div>
            
