@@ -4,9 +4,12 @@
 @tailwind utilities;
 
 body{
-  background-color: rgb(5, 4, 40);
+  background-color: rgb(8, 6, 21);
 }
 
-
+.active-link{
+  color: #21aa09;
+  font-weight: 600;
+}
 
 
