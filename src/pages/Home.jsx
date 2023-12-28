@@ -24,8 +24,8 @@ const Home = () => {
               <div className='w-[180px] h-[250px] animate-spin-slow rounded-full z-2 blur-2xl bg-gradient-to-br from-orange-400 to-transparent'></div>
               <div className='w-[180px] h-[250px] animate-spin-slow-2 rounded-full z-2 blur-2xl bg-gradient-to-br from-indigo-500 to-transparent'></div>
             </div> 
-            <h1 className='font-main text-5xl pt-8 lg:text-7xl z-10 relative'>Akash Dey.</h1>
-            <p className='desc font-tertiary font-semibold py-2 z-8 text-4xl rounded text- text-center backdrop-filter backdrop-blur-sm bg-opacity-10 mb-8 px-4 border border-zinc-800'>Developer & Designer</p>
+            <h1 className='font-main text-5xl text-tansparent bg-clip-text bg-gradient-to-r from-indigo-600 to-rose-600 pt-8 lg:text-7xl z-20 relative'>Akash Dey.</h1>
+            <p className='desc font-tertiary font-semibold py-2 z-0 text-4xl rounded text-center backdrop-filter backdrop-blur-sm bg-opacity-10 mb-8 px-4 border border-zinc-800'>Developer & Designer</p>
             <div className='font-tertiary text-xl font-medium text-center  z-10'>
               <p className='flex items-center gap-4'> <TiPointOfInterest/>Full Stack Development </p>
               <p className='flex items-center gap-4'><CgIfDesign/>Graphic Design</p>

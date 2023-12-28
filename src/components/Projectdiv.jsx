@@ -5,7 +5,7 @@ import { TbWorld } from "react-icons/tb";
 const Projectdiv = ({obj}) => {
   return (
     <div className={`${obj.id % 2 === 0 ? 'lg:flex-row-reverse' : 'lg:flex-row'} px-2 px-4  w-[80%] justify-center flex flex-col items-center py-8 gap-8`}>
-          <div className='w-[90%] lg:w-1/2 rounded-xl shadow-xl  shadow-zinc-500'>
+          <div className='w-[90%] lg:w-1/2 rounded-xl shadow-xl  '>
           <a target="_blank" href={obj.live}><img className='rounded-xl w-full ' src={obj.image} alt="" /></a>
           </div>
           <div className='w-[90%] lg:w-1/2 font-tertiary'>
@@ -14,10 +14,10 @@ const Projectdiv = ({obj}) => {
             {obj.description}
             </p>
             <p className='pt-4 font-medium'> Tools & technologies used: </p>
-            <div className='flex flex-wrap mb-4 gap-2'>
+            <div className='flex flex-wrap mb-4 gap-1'>
             {obj.tech.map((tech, index)=>{
               return(
-                <p index={index} className='bg-zinc-500 border text-sm p-2 text-white rounded'>{tech}</p>
+                <p index={index} className='bg-zinc-500 border text-sm p-1 text-white rounded'>{tech}</p>
               )
             })}
             </div>

@@ -20,16 +20,16 @@ const About = () => {
             {/* <div className='w-80 h-1 bg-gradient-to-r from-transparent via-rose-800 to-transparent'></div> */}
             <div className='flex flex-col lg:flex-row py-16 items-center w-full justify-center'>
             <div className='relative'>
-            <Lottie className='w-[450px] relative z-20' animationData={lottie} loop={true} />
+            <Lottie className='w-[550px] relative z-20' animationData={lottie} loop={true} />
             {/* <div className='w-[300px] h-[300px] absolute top-0 left-20 rounded-full z-2 blur-2xl bg-indigo-600 bg-opacity-20'></div> */}
             </div>
          
             <div className='lg:w-1/3 relative'>
             <div className='w-[400px] h-[300px] absolute -top-20 -left-20  rounded-full z-2 blur-2xl bg-indigo-500 bg-opacity-0'></div>
-            <h2 className='text-xl font-tertiary font-bold pb-8'>User-centred tech solutions, classic rock music, renaissance art & movies</h2>
+            <h2 className='text-2xl font-tertiary font-bold pb-8'>User-centred tech solutions, classic rock music, renaissance art & movies</h2>
             {/* <Word value={paragraph}/> */}
-            <p className='z-10 flex flex-wrap font-medium px-4 font-tertiary text- p-6 rounded  border-t-2 lg:border-t-0 lg:border-l-2 border-indigo-500 shadow bg-gradient-to-b lg:bg-gradient-to-r from-white to-transparent bg-opacity-20 justify-left'>{paragraph}</p>
-            <button className='bg-zinc-800 flex items-center gap-2 text-white font-tertiary  p-2 my-4 rounded'>Checkout my Artworks <VscLinkExternal/></button>
+            <p className='z-10 flex flex-wrap font-medium  font-tertiary  justify-left'>{paragraph}</p>
+            <button className='bg-orange-600 bg-opacity-30 border-orange-800 border flex items-center gap-2 font-tertiary  p-2 my-4 rounded-xl'>Checkout my Artworks <VscLinkExternal/></button>
             </div>
            
             </div>
