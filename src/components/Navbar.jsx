@@ -1,6 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-scroll';
+import { CiHome } from "react-icons/ci";
+import { RiAccountPinCircleFill } from "react-icons/ri";
+import { FaCode } from "react-icons/fa6";
+import { MdEmail } from "react-icons/md";
 
 const NavBar = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -34,13 +38,13 @@ const NavBar = () => {
         translateX:'-50%',
         zIndex: 999,
       }}
-      className='fixed text-white bottom-15 left-1/2 transform -translate-x-1/2 bg-black max-w-full flex justify-center items-center w-[95%] lg:w-[500px]  border border-lime-500 p-4 backdrop-filter backdrop-blur-sm bg-opacity-100 rounded-xl'
+      className='fixed  bottom-15 left-1/2 transform -translate-x-1/2  max-w-full flex justify-center items-center w-[95%] lg:w-[500px] bg-white border border-lime-500 p-2 backdrop-filter backdrop-blur-sm bg-opacity-60 rounded-xl'
     >
       {/* Your navigation content here */}
       <ul className='flex font-tertiary  items-center font-medium w-full justify-around'>
-        <li className='hover:font-bold cursor-pointer '><Link to='home' smooth={true} duration={500}  spy={true} activeClass='active-link'>Home</Link></li>
-        <li className='hover:font-bold cursor-pointer'><Link to='about' smooth={true} duration={500} spy={true} activeClass='active-link'>About</Link></li>
-        <li className='hover:font-bold cursor-pointer'><Link to='projects' smooth={true} duration={500} spy={true} activeClass='active-link'>Projects</Link></li>
+        <li className='hover:font-bold cursor-pointer text-sm '><Link to='home' smooth={true} duration={500}  spy={true} className='text-center flex flex-col justify-center items-center ' activeClass='active-link'><CiHome className='text-2xl'/>Home</Link></li>
+        <li className='hover:font-bold cursor-pointer'><Link to='about' smooth={true} duration={500} spy={true} activeClass='active-link' className='text-center flex flex-col justify-center items-center ' ><RiAccountPinCircleFill className='text-2xl'/>About</Link></li>
+        <li className='hover:font-bold cursor-pointer'><Link to='projects' smooth={true} duration={500} spy={true} activeClass='active-link' className='text-center flex flex-col justify-center items-center '><FaCode/>Projects</Link></li>
         <li className='hover:font-bold cursor-pointer'>Contact</li>
         {/* Add more navigation items */}
       </ul>
