@@ -17,7 +17,7 @@ const Projectdiv = ({obj}) => {
             <div className='flex flex-wrap mb-4 gap-1'>
             {obj.tech.map((tech, index)=>{
               return(
-                <p index={index} className=' border border-zinc-600 text-sm p-2  rounded-3xl'>{tech}</p>
+                <p key={index} className=' border border-zinc-600 text-sm p-2  rounded-3xl'>{tech}</p>
               )
             })}
             </div>

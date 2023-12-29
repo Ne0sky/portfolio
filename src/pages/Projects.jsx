@@ -10,9 +10,9 @@ const Projects = () => {
         <h2 className='text-5xl lg:text-5xl font-medium  font-tertiary  flex items-center gap-4'>Recent Works </h2>
         <p className='text font-medium  font-tertiary'>My latest works</p>
         <div className='py-8 flex justify-center flex-col min-w-full items-center'>
-        {projects.map((obj)=>{
+        {projects.map((obj, index)=>{
           return(
-            <Projectdiv obj={obj} />
+            <Projectdiv key={index} obj={obj} />
           )
         })}
         </div>

@@ -18,9 +18,9 @@ const Contact = () => {
         e.preventDefault();
 
         // Replace these values with your own email.js service details
-        const serviceId = 'service_f21p4cv';
-        const templateId = 'template_mt9wwan';
-        const publickey = 'VitvKMNrWonzZTLkY';
+        const serviceId =import.meta.env.VITE_SERVICEID
+        const templateId =import.meta.env.VITE_TEMPLATEID
+        const publickey =import.meta.env.VITE_PUBLICKEY
 
         const template_params = {
             from_name : name,
