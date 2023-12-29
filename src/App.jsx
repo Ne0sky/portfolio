@@ -4,10 +4,12 @@ import About from './pages/About';
 import Projects from './pages/Projects';
 import NavBar from './components/Navbar';
 import { Element } from 'react-scroll';
+import Contact from './pages/Contact';
 function App() {
 
   return (
     <div className='overflow-x-hidden max-w-screen'>
+      <NavBar/>
       <Element name='home'>
         <Home />
       </Element>
@@ -17,7 +19,10 @@ function App() {
       <Element name='projects'>
         <Projects />
       </Element>
-      <NavBar/>
+      <Element name='contact'>
+      <Contact/>
+      </Element>
+      
     </div>
   );
 }
