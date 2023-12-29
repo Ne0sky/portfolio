@@ -1,27 +1,31 @@
 import React from 'react';
-import { VscLinkExternal } from "react-icons/vsc";
+import { Link } from 'react-scroll';
 import Sidemenu from '../components/Sidemenu';
 import Contactbar from '../components/Contactbar';
 import { FaDownload } from "react-icons/fa6";
 import { TiPointOfInterest } from "react-icons/ti";
 import { CgIfDesign } from "react-icons/cg";
 import { FaPaintBrush } from "react-icons/fa";
-
+import { FaLinkedinIn } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+import { SiLeetcode } from "react-icons/si";
+import { GrGithub } from 'react-icons/gr';
 const Home = () => {
   return (
-    <div className='w-screen h-full  overflow-x-hidden p-4 md:p-16 lg:p-16'>
+    <div className='w-screen h-full  overflow-x-hidden p-2 md:p-16 lg:p-16'>
       <div className='flex items-end'>
         <h1 className='text-2xl lg:text-3xl text-indigo-800 font-main'>Ne0sky</h1>
         <div className='w-80 h-0.5 bg-gradient-to-r from-indigo-800 to-transparent'></div>
       </div>
       <div className='flex h-full items-center w-full  justify-around'>
-        <div className='w-1/3 md:flex hidden'>
+        <div className='w-1/3 lg:flex hidden'>
           <Sidemenu className=''/>
         </div>
-        <div className='min-h-full relative w-1/3  flex flex-col justify-center items-center'>
+        <div className='min-h-full relative w-[80%] md:w-1/2 lg:w-1/3  flex flex-col justify-center items-center'>
           <div className='flex flex-col items-center justify-center'>
             <div className='absolute top-4 flex items-center'>
-              <div className='w-[180px] h-[250px] animate-spin-slow rounded-full z-2 blur-2xl bg-gradient-to-br from-orange-400 to-transparent'></div>
+              <div className='w-[180px] h-[250px] animate-spin-slow rounded-full z-2 blur-2xl bg-gradient-to-br from-lime-400 to-transparent'></div>
               <div className='w-[180px] h-[250px] animate-spin-slow-2 rounded-full z-2 blur-2xl bg-gradient-to-br from-indigo-500 to-transparent'></div>
             </div> 
             <h1 className='font-main text-5xl text-tansparent bg-clip-text bg-gradient-to-r from-indigo-600 to-rose-600 pt-8 lg:text-7xl z-20 relative'>Akash Dey.</h1>
@@ -31,18 +35,24 @@ const Home = () => {
               <p className='flex items-center gap-4'><CgIfDesign/>Graphic Design</p>
               <p className='flex items-center gap-4'><FaPaintBrush/>Creative Arts</p>
             </div>
+            <div className='p-4  bg-transparnet flex  items-center gap-4 my-4 lg:hidden justify-around text-xl'>
+              <a target='_blank' href="https://www.linkedin.com/in/akash-dey-75165b201/"><FaLinkedinIn/></a>
+               <a target='_blank' href="https://www.instagram.com/cynik._/"><FaInstagram/></a>
+               <a target='_blank' href="https://github.com/Ne0sky"><GrGithub/> </a> 
+               <a target='_blank' href="https://leetcode.com/ne0sky/"><SiLeetcode/></a></div>
+
             <div className='w-80 mt-8 h-0.5 bg-gradient-to-r from-transparent via-rose-800 to-transparent'></div>
           </div>
-          <div className=' text-center px-4'>
-            <p className='tag  my-8 text- font-tertiary z-10 uppercase'>Hey there!👋 I'm a <b>Computer Science undergrad</b> with a deep-rooted passion for software engineering and design. I create engaging and beautiful tech solutions using tools like <b>REACT JS, </b> <b>Node js, </b> <b>Express js, </b> <b>Mongo db, </b>and a host of other tech goodies.</p>
+          <div className=' text-center '>
+            <p className='tag  my-8 text- font-tertiary z-10 '>Hey there!👋 I'm a <b>Computer Science undergrad</b> with a deep-rooted passion for software engineering and design. I create engaging and beautiful tech solutions using tools like <b>React Js, </b> <b>Node Js, </b> <b>Express Js, </b> <b>Mongo DB, </b>and a host of other tech goodies.</p>
             <div className='flex w-full gap-4 items-center justify-center'>
-            <button className='z-10 font-tertiary  text-xl w-auto text-center border border-orange-800 rounded px-4 py-2 bg-opacity-30 bg-orange-500 hover:bg-opacity-50 flex gap-2 items-center'>Resume <FaDownload/></button>
-            <button className='z-10 font-tertiary text-xl w-auto text-center border border-indigo-500 rounded px-4 py-2 bg-opacity-20 bg-indigo-800 hover:bg-opacity-50'>Projects</button>
+            <a target='_blank' href="https://hodstaticmedia.s3.eu-north-1.amazonaws.com/files/AKASH_DEY_RESUME.pdf"><button className='z-10 font-tertiary  text-sm w-auto text-center  rounded-xl p-3 text-white  bg-zinc-800  flex gap-2 items-center'>Resume <FaDownload/></button></a>
+            <Link to='projects' smooth={true} duration={500} spy={true}><button className='z-10 font-tertiary  w-auto text-center text-sm w-auto text-center  rounded-xl p-3 text-white  bg-zinc-800 '>Projects</button></Link>
             </div>
             
           </div>
         </div>
-        <div className='w-1/3 md:flex hidden flex flex-col items-end just'>
+        <div className='w-1/3 lg:flex hidden flex flex-col items-end just'>
           <Contactbar/>
         </div>
       </div>

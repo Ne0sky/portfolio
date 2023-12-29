@@ -5,6 +5,7 @@ import Projects from './pages/Projects';
 import NavBar from './components/Navbar';
 import { Element } from 'react-scroll';
 import Contact from './pages/Contact';
+import Footer from './components/Footer';
 function App() {
 
   return (
@@ -22,6 +23,7 @@ function App() {
       <Element name='contact'>
       <Contact/>
       </Element>
+      <Footer/>
       
     </div>
   );

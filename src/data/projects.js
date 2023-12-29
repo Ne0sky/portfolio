@@ -1,7 +1,7 @@
 const projects = [
     {
         id:1,
-        title:"Freelance Website",
+        title:"FLEXWAVE LANDING PAGE",
         description:`Developed a website for a freelance client, who was signage company business owner.`,
         image:"/projects/flexwave.png",
         live:"https://flexwave.netlify.app/",
@@ -10,17 +10,17 @@ const projects = [
     },
     {
         id:2,
-        title:"Animaxx",
+        title:"ANIMAX",
         description:`With so many new anime that come out every year, it sometimes gets tough to keep track of what anime you are
         watching. Animax tends to that issue and helps to to keep track of the anime that you are watching.`,
-        image:"/projects/animax.png",
+        image:"/projects/animax2.png",
         live:"https://animaxx.netlify.app/",
         github:"https://github.com/Ne0sky/Animax",
         tech:["React Js", "Tailwind CSS", "Context API", "Jikan API", "React Router" ]
     },
     {
         id:3,
-        title:"TheBookWorm",
+        title:"THEBOOKWORM",
         description:`Developed BookWorm, a React application leveraging the Gutendex API, enabling users to seamlessly download,
         search, mark as read, and manage a personalized reading list by adding and removing books.`,
         image:"/projects/bookworm.png",

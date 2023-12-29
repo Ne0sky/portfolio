@@ -38,7 +38,7 @@ const NavBar = () => {
         translateX:'-50%',
         zIndex: 999,
       }}
-      className='fixed  bottom-15 left-1/2 transform -translate-x-1/2  max-w-full flex justify-center items-center w-[95%] lg:w-[500px] bg-white border border-orange-500 p-2 backdrop-filter backdrop-blur-sm bg-opacity-60 rounded-xl'
+      className='fixed  bottom-15 left-1/2 transform -translate-x-1/2  max-w-full flex justify-center items-center w-[95%] lg:w-[500px] bg-white border-zinc-800 border p-2 backdrop-filter backdrop-blur-sm bg-opacity-60 rounded-xl'
     >
       {/* Your navigation content here */}
       <ul className='flex font-tertiary  items-center font-medium w-full justify-around'>

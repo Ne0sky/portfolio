@@ -14,8 +14,8 @@ const About = () => {
     return (
         <div className='w-full  p-4 flex flex-col justify-center items-center'>
 
-            <h2 className='font-tertiary font-medium text-4xl lg:text-5xl  text-center relative'>About Me</h2>
-            <p className=' font-medium  font-tertiary'>Introduction</p>
+            <h2 className='font-tertiary font-medium text-5xl lg:text-5xl  text-center relative'>About Me</h2>
+            <p className=' font-medium  font-tertiary'>A brief intro into who I am</p>
 
             {/* <div className='w-80 h-1 bg-gradient-to-r from-transparent via-rose-800 to-transparent'></div> */}
             <div className='flex flex-col lg:flex-row py-16 items-center w-full justify-center'>
@@ -28,8 +28,8 @@ const About = () => {
             <div className='w-[400px] h-[300px] absolute -top-20 -left-20  rounded-full z-2 blur-2xl bg-indigo-500 bg-opacity-0'></div>
             <h2 className='text-2xl font-tertiary font-bold pb-8'>User-centred tech solutions, classic rock music, renaissance art & movies</h2>
             {/* <Word value={paragraph}/> */}
-            <p className='z-10 flex flex-wrap font-medium  font-tertiary  justify-left'>{paragraph}</p>
-            <button className='bg-orange-600 bg-opacity-30 border-orange-800 border flex items-center gap-2 font-tertiary  p-2 my-4 rounded-xl'>Checkout my Artworks <VscLinkExternal/></button>
+            <p className='z-10 flex flex-wrap  font-tertiary  justify-left'>{paragraph}</p>
+            <a target='_black' href="https://www.instagram.com/cynik._/"><button className='bg-zinc-800 rounded-xl p-3 flex items-center gap-2 font-tertiary   my-4 text-white'>Checkout my Artworks <VscLinkExternal/></button></a>
             </div>
            
             </div>
