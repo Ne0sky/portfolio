@@ -9,7 +9,7 @@ const Projectdiv = ({obj}) => {
           <a target="_blank" href={obj.live}><img className=' w-full ' src={obj.image} alt="" /></a>
           </div>
           <div className='w-[90%] lg:w-1/2 font-tertiary'>
-            <h3 className='text-3xl font-semibold font-tertiary text-zinc-800'>{obj.title}</h3>
+            <h3 className='text-2xl font-semibold font-tertiary text-zinc-800'>{obj.title}</h3>
             <p className='text-zinc-800'>
             {obj.description}
             </p>
