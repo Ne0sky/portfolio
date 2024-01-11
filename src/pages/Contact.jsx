@@ -5,7 +5,6 @@ import lottie_contact from '../data/lottie_contact.json'
 import { FaRegPaperPlane } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { FaLinkedinIn } from "react-icons/fa";
-import { FaGithub } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
 import { GrGithub } from 'react-icons/gr';
@@ -19,8 +18,8 @@ const Contact = () => {
 
         // Replace these values with your own email.js service details
         const serviceId =import.meta.env.VITE_SERVICEID
-        const templateId =import.meta.env.VITE_TEMPLATEID
-        const publickey =import.meta.env.VITE_PUBLICKEY
+        const templateId =template_mt9wwan
+        const publickey =VitvKMNrWonzZTLkY
 
         const template_params = {
             from_name : name,
