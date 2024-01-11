@@ -18,8 +18,8 @@ const Contact = () => {
 
         // Replace these values with your own email.js service details
         const serviceId =import.meta.env.VITE_SERVICEID
-        const templateId =template_mt9wwan
-        const publickey =VitvKMNrWonzZTLkY
+        const templateId ='template_mt9wwan'
+        const publickey ='VitvKMNrWonzZTLkY'
 
         const template_params = {
             from_name : name,
