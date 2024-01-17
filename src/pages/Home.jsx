@@ -46,7 +46,7 @@ const Home = () => {
           <div className=' text-center '>
             <p className='tag  my-8 text- font-tertiary z-10 '>Hey there!👋 I'm a <b>Computer Science undergrad</b> with a deep-rooted passion for software engineering and design. I create engaging and beautiful tech solutions using tools like <b>React Js, </b> <b>Node Js, </b> <b>Express Js, </b> <b>Mongo DB, </b>and a host of other tech goodies.</p>
             <div className='flex w-full gap-4 items-center justify-center'>
-            <a target='_blank' href="https://hodstaticmedia.s3.eu-north-1.amazonaws.com/files/AKASH_DEY_RESUME.pdf"><button className='z-10 font-tertiary  text-sm w-auto text-center  rounded-xl p-3 text-white  bg-zinc-800  flex gap-2 items-center'>Resume <FaDownload/></button></a>
+            <a target='_blank' href="https://drive.google.com/file/d/1-Szp2E8kKwgzkdTMOqDu9Iqq-uP7lfNM/view?usp=sharing"><button className='z-10 font-tertiary  text-sm w-auto text-center  rounded-xl p-3 text-white  bg-zinc-800  flex gap-2 items-center'>Resume <FaDownload/></button></a>
             <Link to='projects' smooth={true} duration={500} spy={true}><button className='z-10 font-tertiary  w-auto text-center text-sm w-auto text-center  rounded-xl p-3 text-white  bg-zinc-800 '>Projects</button></Link>
             </div>
             
