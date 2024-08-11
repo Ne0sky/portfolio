@@ -1,32 +1,33 @@
 const projects = [
     {
         id:1,
-        title:"FLEXWAVE LANDING PAGE",
-        description:`Developed a website for a freelance client, who was signage company business owner.`,
-        image:"/projects/flexwave.png",
-        live:"https://flexwave.netlify.app/",
-        github:"https://github.com/Ne0sky/Flexwave",
-        tech:["React Js", "Tailwind CSS", "React Router", "Swiper JS" ]
+        title:"ANIMAXX",
+        description:`Developed Animaxx,  a MERN stack project which  addresses the challenge of keeping track of the ever-growing number of new anime releases each year. A full stack website where users can register and then track, share and discover new anime. Leveraging the huge database of Anilist to allow users to create and share their own watchlist of anime.
+`,
+        image:"/projects/ANIMAXX.png",
+        live:"https://animaxx.vercel.app/",
+        github:"https://github.com/Ne0sky/AnimaxxV2",
+        tech:["React Js", "Tailwind CSS", "Cloudinary", "Node JS", "React Router", "Express JS", "Mongo DB" ]
     },
     {
         id:2,
-        title:"ANIMAX",
-        description:`With so many new anime that come out every year, it sometimes gets tough to keep track of what anime you are
-        watching. Animax tends to that issue and helps to to keep track of the anime that you are watching.`,
-        image:"/projects/animax2.png",
-        live:"https://animaxx.netlify.app/",
-        github:"https://github.com/Ne0sky/Animax",
-        tech:["React Js", "Tailwind CSS", "Context API", "Jikan API", "React Router" ]
+        title:"HealthSync",
+        description:`HealthSync– an open-source, Generative AI powered, healthcare system that connects doctors to patients in remote areas. It analyzes the symptoms and refers patients to the respective specialty doctors via Jitsi meet api.
+        Spearheaded the complete frontend development of the website.`,
+        image:"/projects/HEALTHSYNC.png",
+        live:"https://healthsync-neon.vercel.app/",
+        github:"https://github.com/Ne0sky/healthsync",
+        tech:["React Js", "Tailwind CSS", "Jitsi Meet API", "Material UI" ]
     },
+    
     {
         id:3,
-        title:"THEBOOKWORM",
-        description:`Developed BookWorm, a React application leveraging the Gutendex API, enabling users to seamlessly download,
-        search, mark as read, and manage a personalized reading list by adding and removing books.`,
-        image:"/projects/bookworm.png",
-        live:"https://thebooksworm.netlify.app/",
-        github:"https://github.com/Ne0sky/TheBookWorm",
-        tech:["React Js", "Tailwind CSS", "Context API", "Gutendex API", "React Router", "Material UI" ]
+        title:"INFINITE MEDIAS",
+        description:`A website for a client that comprises of a landing page, contact page, portfolio page, gallery page. It is a responsive website that is built using Next Js, tailwind css, shad cn.`,
+        image:"/projects/Infinitemedia.png",
+        live:"https://infinitemedias.vercel.app/",
+        github:"https://github.com/Ne0sky/Infinity-Edits",
+        tech:["Next Js", "Tailwind CSS",  "Shad cn", "Typescript" ]
     },
    
     

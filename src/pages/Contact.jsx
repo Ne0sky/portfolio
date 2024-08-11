@@ -45,23 +45,23 @@ const Contact = () => {
     };
 
     return (
-        <div className='w-full px-4 md:px-8 lg:px-16 pt-16 pb-8 '>
+        <div className='w-full px-4 md:px-8 lg:px-16 pt-16 pb-8 text-white'>
             
             <div className='flex flex-col lg:flex-row w-full justify-center items-ce gap-8'>
             <div className='font-tertiary'>
             <h2 className='font-tertiary font-medium text-4xl lg:text-5xl '>Have an awesome idea? <br/> Lets bring it to life.</h2>
-            <p className=' font-medium  py-4 text-zinc-800 font-tertiary'>I am looking for freelance opportunities or internships <br/> in startups or agencies. </p>
+            <p className=' font-medium  py-4 text-zinc-100 font-tertiary'>I am looking for freelance opportunities or internships <br/> in startups or agencies. </p>
             <form className=' flex gap-2 py-8 font-teertiary flex-col w-[90%] lg:w-[80%] 'onSubmit={handleSubmit}>
                 <div className='flex flex-col'>
-                <input type="text" className='p-2 bg-transparent font-tertiary border-b border-zinc-600 placeholder:text-zinc-800 focus:outline-none' placeholder='Your Name' id="name" value={name} onChange={(e) => setName(e.target.value)} />
+                <input type="text" className='p-2 bg-transparent font-tertiary border-b border-zinc-100 placeholder:text-zinc-200 focus:outline-none' placeholder='Your Name' id="name" value={name} onChange={(e) => setName(e.target.value)} />
                 </div>
                 <div className='flex flex-col'>
-                <input type="email" className='p-2 bg-transparent font-tertiary border-b border-zinc-600 placeholder:text-zinc-800 focus:outline-none' id="email" placeholder='your email' value={email} onChange={(e) => setEmail(e.target.value)} />
+                <input type="email" className='p-2 bg-transparent font-tertiary border-b border-zinc-100 placeholder:text-zinc-200 focus:outline-none' id="email" placeholder='your email' value={email} onChange={(e) => setEmail(e.target.value)} />
                 </div>
                 <div className='flex flex-col'>
-                <textarea id="message" className='h-44 p-2 bg-transparent font-tertiary border-b border-zinc-600 placeholder:text-zinc-800 focus:outline-none' placeholder='Enter your messsage' value={message} onChange={(e) => setMessage(e.target.value)} />
+                <textarea id="message" className='h-44 p-2 bg-transparent font-tertiary border-b border-zinc-100 placeholder:text-zinc-200 focus:outline-none' placeholder='Enter your messsage' value={message} onChange={(e) => setMessage(e.target.value)} />
                 </div>
-                <button className='p-2 flex items-center gap-2 mt-8 justify-center bg-zinc-900 text-sm rounded-2xl w-1/3 text-white font-tertiary' type="submit ">Send<FaRegPaperPlane/></button>
+                <button className='p-2 flex items-center gap-2 mt-8 justify-center bg-indigo-500 text-sm rounded-2xl w-1/3 text-white font-tertiary' type="submit ">Send<FaRegPaperPlane/></button>
             </form>
             </div>
 
@@ -69,10 +69,10 @@ const Contact = () => {
             <Lottie className='hidden lg:block w-[350px]   z-20' animationData={lottie_contact} loop={true} />         
             <div  className='flex flex-col gap-4'>
                 <div>
-            <h3 className='font-tertiary font-medium text-lg'>Contact Details</h3>
-            <div className='flex items-center'> <MdEmail/><p>mailmeakash2@gmail.com</p></div> 
+            <h3 className='font-tertiary font-medium text-lg text-lime-400'>Contact Details</h3>
+            <div className='flex items-center text-white'> <MdEmail/><p>mailmeakash2@gmail.com</p></div> 
             </div>
-            <div className='   '>
+            <div className=' text-white  '>
                 <h3 className='font-tertiary font-medium text-lg'> My Digital Spaces</h3>
                 <a className='flex items-center gap-2'  target='_blank' href="https://www.linkedin.com/in/akash-dey-75165b201/"><FaLinkedinIn/> Linkedin</a>
                  <a className='flex items-center gap-2'  target='_blank' href="https://www.instagram.com/cynik._/"><FaInstagram/> Instagram</a>
