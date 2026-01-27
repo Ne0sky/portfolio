@@ -77,10 +77,10 @@ export default function RetroHero() {
             AKASH DEY
           </h1>
           
-          <div className="mt-8 flex gap-6 justify-center text-cyan-400 font-mono text-[10px] md:text-xs tracking-[0.4em] uppercase">
-            <span>Systems Architect</span>
+          <div className="mt-8 flex gap-6 justify-center text-white font-mono text-[10px] md:text-xs tracking-[0.4em] uppercase">
+            <span>Software Development Engineer</span>
             <span className="text-pink-500">/</span>
-            <span>Cognizant SDE</span>
+            <span>,Bangalore (IN)</span>
           </div>
 
           <p className="mt-12 max-w-md mx-auto text-white/30 font-mono text-[9px] uppercase tracking-widest leading-loose">
