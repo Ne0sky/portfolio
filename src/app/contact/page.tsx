@@ -46,14 +46,13 @@ export default function ContactPage() {
               <Activity size={14} className="animate-pulse" />
               <span>Comm_Link: Established</span>
             </div>
-            <h1 className="text-7xl md:text-9xl font-black text-white italic uppercase tracking-tighter leading-[0.8]">
-              UP<span className="text-cyan-500">LINK</span>
+            <h1 className="text-5xl md:text-7xl font-black text-white italic uppercase tracking-tighter leading-[0.8]">
+              CONTACT<span className="text-cyan-500"> me</span>
             </h1>
           </motion.div>
           
           <div className="text-right font-mono text-[9px] text-white/20 uppercase tracking-[0.3em] leading-relaxed hidden md:block">
             Loc_Coord: 12.9716° N, 77.5946° E <br />
-            Node_Ref: AKASH_SECURE_V4 <br />
             <span className="text-cyan-500/40">Status: Listening...</span>
           </div>
         </div>
@@ -63,12 +62,12 @@ export default function ContactPage() {
           {/* 🚀 LEFT COLUMN: SYSTEM INFO (4 Cols) */}
           <div className="lg:col-span-5 space-y-12">
             <div className="space-y-8">
-              <div className="flex items-start gap-4 p-4 border border-cyan-500/20 bg-cyan-500/5">
+              {/* <div className="flex items-start gap-4 p-4 border border-cyan-500/20 bg-cyan-500/5">
                 <ShieldAlert className="text-cyan-500 mt-1 shrink-0" size={20} />
                 <p className="text-[11px] font-mono text-cyan-200/60 leading-relaxed uppercase tracking-wide">
                   Encryption active. All data packets are tunneled through secure SDE protocols. Unauthorized interception is improbable.
                 </p>
-              </div>
+              </div> */}
 
               <div className="space-y-4">
                 <ContactLink icon={<Mail size={18} />} label="Direct_Mail" value="mailmeakash2@gmail.com" href="mailto:mailmeakash2@gmail.com" />
@@ -105,24 +104,24 @@ export default function ContactPage() {
             <form action={handleSubmit} className="space-y-8 bg-white/[0.02] border border-white/5 p-8 md:p-12">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div className="space-y-2">
-                  <label className="text-[10px] font-mono uppercase tracking-[0.3em] text-white/30">Identifier</label>
+                  <label className="text-[10px] font-mono uppercase tracking-[0.3em] text-white">Full Name</label>
                   <input name="name" required placeholder="GUEST_01" className="w-full bg-transparent border-b border-white/10 py-3 text-sm text-white focus:outline-none focus:border-cyan-500 transition-all font-mono" />
                 </div>
                 <div className="space-y-2">
-                  <label className="text-[10px] font-mono uppercase tracking-[0.3em] text-white/30">Return_Path</label>
+                  <label className="text-[10px] font-mono uppercase tracking-[0.3em] text-white">Email</label>
                   <input name="email" type="email" required placeholder="USER@DOMAIN.SYS" className="w-full bg-transparent border-b border-white/10 py-3 text-sm text-white focus:outline-none focus:border-cyan-500 transition-all font-mono" />
                 </div>
               </div>
 
               <div className="space-y-2">
-                <label className="text-[10px] font-mono uppercase tracking-[0.3em] text-white/30">Data_Payload</label>
+                <label className="text-[10px] font-mono uppercase tracking-[0.3em] text-white">Message</label>
                 <textarea name="message" required rows={6} placeholder="TYPE_MESSAGE_HERE..." className="w-full bg-transparent border border-white/10 p-4 text-sm text-white focus:outline-none focus:border-cyan-500 transition-all font-mono resize-none" />
               </div>
 
               <button type="submit" className="w-full group relative flex items-center justify-center gap-3 bg-cyan-600 text-black font-black uppercase text-xs tracking-[0.4em] py-6 hover:bg-cyan-400 transition-all active:scale-95 overflow-hidden">
                 <div className="absolute inset-0 bg-white/20 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-500" />
                 <Send size={16} />
-                <span>Transmit_Uplink</span>
+                <span>Send Message</span>
               </button>
             </form>
           </div>

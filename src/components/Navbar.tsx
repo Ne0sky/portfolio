@@ -33,7 +33,7 @@ export default function Navbar() {
           className="flex items-center bg-[#0a0a0a]/90 backdrop-blur-md border border-white/10 px-1 py-1 shadow-[0_0_40px_rgba(0,0,0,0.7)] pointer-events-auto"
         >
           {/* DESKTOP: LEFT STATUS INDICATOR */}
-          <div className="hidden md:flex items-center px-4 border-r border-white/10 gap-3">
+          {/* <div className="hidden md:flex items-center px-4 border-r border-white/10 gap-3">
             <div className="relative flex h-2 w-2">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-cyan-500"></span>
@@ -41,7 +41,7 @@ export default function Navbar() {
             <span className="text-[10px] font-mono text-white/30 uppercase tracking-[0.2em] whitespace-nowrap">
               System.Link_Active
             </span>
-          </div>
+          </div> */}
 
           {/* DESKTOP LINKS */}
           <div className="hidden md:flex">
@@ -91,11 +91,11 @@ export default function Navbar() {
           </button>
 
           {/* DESKTOP: RIGHT METADATA */}
-          <div className="hidden md:flex items-center px-5 border-l border-white/10 italic">
+          {/* <div className="hidden md:flex items-center px-5 border-l border-white/10 italic">
             <span className="text-[9px] font-mono text-cyan-500/40 uppercase tracking-widest">
               AD_CORE_V4.0
             </span>
-          </div>
+          </div> */}
         </motion.nav>
       </div>
 

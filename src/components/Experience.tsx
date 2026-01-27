@@ -49,7 +49,7 @@ export default function Experience() {
             
             <h3 className="text-2xl font-semibold text-white">{exp.role}</h3>
             <p className="text-cyan-400 font-medium mb-4">{exp.company} • {exp.duration}</p>
-            <ul className="space-y-2 text-slate-400">
+            <ul className="space-y-2 text-slate-200">
               {exp.description.map((item, i) => (
                 <li key={i} className="flex gap-2">
                   <span className="text-purple-500">▹</span> {item}

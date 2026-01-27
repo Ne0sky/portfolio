@@ -7,7 +7,7 @@ const experiences = [
     company: "COGNIZANT",
     role: "PROGRAMMER ANALYST",
     duration: "2025 — PRESENT",
-    location: "BENGALURU_NODE",
+    location: "BENGALURU, INDIA",
     status: "ACTIVE_DUTY",
     description: [
       "Engineered Python + PostgreSQL ingestion engines: 90% latency reduction.",
@@ -21,7 +21,7 @@ const experiences = [
     company: "AI CHEF MASTER",
     role: "FRONTEND ENGINEER",
     duration: "2023 — 2023",
-    location: "REMOTE_LINK",
+    location: "REMOTE",
     status: "ARCHIVED",
     description: [
       "Led UI development for core dashboard using React.js and Tailwind stack.",
@@ -52,7 +52,7 @@ export default function Experience() {
             <span>Personnel_Record_Access</span>
           </div>
           <h2 className="text-5xl md:text-7xl font-black text-white italic uppercase tracking-tighter">
-            Service <span className="text-cyan-400">Record</span>
+            Professional <span className="text-cyan-400">Experience</span>
           </h2>
         </div>
 
@@ -104,7 +104,7 @@ export default function Experience() {
                   {exp.description.map((item, i) => (
                     <li key={i} className="flex gap-4 items-start group/item">
                       <ChevronRight size={14} className="text-cyan-500 mt-0.5 opacity-30 group-hover/item:opacity-100 group-hover/item:translate-x-1 transition-all" />
-                      <p className="text-white/50 font-mono text-[11px] leading-relaxed group-hover/item:text-white/90 transition-colors">
+                      <p className="text-white font-mono text-[11px] leading-relaxed group-hover/item:text-white/90 transition-colors">
                         {item}
                       </p>
                     </li>
